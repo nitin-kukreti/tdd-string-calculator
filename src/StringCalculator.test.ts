@@ -20,6 +20,12 @@ describe('StringCalculator', () => {
     const calculator = new StringCalculator();
     expect(calculator.add("1,2,3")).toBe(6);
   });
+
+  it('should handle new lines between numbers as delimiters', () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("1\n2,3")).toBe(6);
+  });
+  
   
 
 });
