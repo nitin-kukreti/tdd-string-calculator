@@ -16,5 +16,10 @@ describe('StringCalculator', () => {
     expect(calculator.add("1,2")).toBe(3);
   });
   
+  it('should return the sum of multiple numbers separated by commas', () => {
+    const calculator = new StringCalculator();
+    expect(calculator.add("1,2,3")).toBe(6);
+  });
+  
 
 });
